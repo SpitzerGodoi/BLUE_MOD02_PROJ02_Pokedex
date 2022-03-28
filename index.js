@@ -1,7 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const path = require("path");
 let alerta = "";
+
+const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
@@ -52,9 +55,9 @@ const pokedex = [
 ];
 
 app.get("/", (req, res) => {
-    setTimeout(() => {
-        alerta="";
-    }, 1000);
+  setTimeout(() => {
+    alerta = "";
+  }, 1000);
   res.render("index", { pokedex, alerta });
 });
 
@@ -78,6 +81,6 @@ app.get("/detalhes/:id", (req, res) => {
   res.render("detalhes", { pokemon });
 });
 
-app.listen(3000, () =>
-  console.log("Servidor rodando em http://localhost:3000")
+app.listen(port, () =>
+  console.log(`Servidor rodando em http://localhost:${port}`)
 );
