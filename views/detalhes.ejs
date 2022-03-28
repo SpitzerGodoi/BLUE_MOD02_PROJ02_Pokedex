@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/bola.ico" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="/img/logo.png" alt="" />
+        <ul>
+          <a href="/"><li>Pokédex</li></a>
+          <a href="/cadastro"><li>Cadastro</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section>
+                <div>
+                    <div><%=pokemon.nome%> Nº<%=pokemon.numero%></h2></div>
+                    <a href="">
+                        <div>
+                        <img class="imagem" src="<%=pokemon.imagem%>" alt=""/>
+                        <h4><%=pokemon.descricao%></h4>
+                    </div>
+                    </a>
+                    <div>
+                        <div>
+                            <% pokemon.tipo.forEach((tipo) => { %>
+                                <h4 class="tipos">Tipo - <%=tipo%></h4>
+                                <% })%>
+                        </div>
+                        <div>
+                            <h4 class="tipos">Altura - <%=pokemon.altura%></h4>
+                        </div>
+                        <div>
+                            <h4 class="tipos">Peso - <%=pokemon.peso%> </h4>
+                        </div>
+                        <div>
+                            <h4 class="tipos">Categoria - <%=pokemon.categoria%></h3>
+                        </div>
+                        <div>
+                            <h4 class="tipos">Habilidade - <%=pokemon.habilidade%></h3>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Pokémon - Todos os direitos reservados - 2022</p>
+      </footer>
+      <script src="./js/script.js"></script>
+    </body>
+  </html>

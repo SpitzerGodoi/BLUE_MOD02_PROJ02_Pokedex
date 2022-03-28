@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, arial;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+}
+
+/*------------------------------------NAVBAR-------------------------------------*/
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(207, 0, 0);
+  padding: 2%;
+}
+
+header nav img {
+  width: 20%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 600;
+  font-size: 4vw;
+  width: 60%;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul a:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+/*------------------------------------POKEDEX-------------------------------------*/
+
+main {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.932);
+  border-radius: 1rem;
+}
+
+section#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+section#cards a{
+  text-decoration: none;
+  width: 15rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px 5px #00000079;
+  padding: 1rem;
+  margin: 4%;
+}
+
+section#cards a:hover {
+  transition: 0.5s;
+  transform: scale(1.07);
+}
+
+section#cards a div.card img {
+  width: 100%;
+  background-color: rgba(202, 200, 200, 0.699);
+  border-radius: 1rem;
+}
+
+section#cards a div.card p#num {
+  margin-bottom: 1rem;
+  color: rgb(167, 167, 167);
+  font-weight: 600;
+}
+
+section#cards a div.card h2{
+  color: black; 
+}
+
+section#cards a div.card p#tipo {
+  display: flex;
+  justify-content:center;
+  border: solid black;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  margin: 3% 0 3% 30%;
+  padding: 1% 2% 1% 2%;
+  border-radius: 1rem;
+  width: 4rem;
+}
+
+
+/*------------------------------------DETALHES-------------------------------------*/
+
+
+/*------------------------------------CADASTRO-------------------------------------*/
+section#cadastro{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+section#cadastro img#pokedex{
+  width: 50%;
+}
+
+section#cadastro div.campos form input{
+ width: 100%;
+ padding: 2%;
+ margin: 0 0 3% 0;
+ border: solid black;
+ border-radius: 1rem;
+}
+
+section#cadastro div.campos form label{
+  font-weight: 500;
+}
+
+section#cadastro form button{
+  background-color: rgb(207, 0, 0);
+  border: solid rgb(207, 0, 0);
+  width: 40%;
+  color: white;
+  font-size: 100%;
+  font-weight: 500;
+  border-radius: 1rem;
+  margin-top: 3%;
+}
+
+section#cadastro form button:hover{
+  cursor: pointer;
+  transition: 1s;
+  background-color: white;
+  border: solid black;
+  color: rgb(207, 0, 0);
+}
+
+section#alerta {
+  text-align: center;
+  background-color: yellow;
+  font-size: 150%;
+  font-weight: 600;
+}
+
+span#fechar {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+span#fechar:hover{
+  color: rgb(207, 0, 0);
+ 
+}
+/*------------------------------------RODAPE-------------------------------------*/
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
