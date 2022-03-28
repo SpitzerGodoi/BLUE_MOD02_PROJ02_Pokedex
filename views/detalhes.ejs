@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./img/bola.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/img/bola.ico" />
     <title>Pokédex</title>
   </head>
   <body>
@@ -19,40 +19,38 @@
       </nav>
     </header>
     <main>
-        <section>
-                <div>
-                    <div><%=pokemon.nome%> Nº<%=pokemon.numero%></h2></div>
-                    <a href="">
-                        <div>
-                        <img class="imagem" src="<%=pokemon.imagem%>" alt=""/>
-                        <h4><%=pokemon.descricao%></h4>
-                    </div>
-                    </a>
-                    <div>
-                        <div>
-                            <% pokemon.tipo.forEach((tipo) => { %>
-                                <h4 class="tipos">Tipo - <%=tipo%></h4>
-                                <% })%>
-                        </div>
-                        <div>
-                            <h4 class="tipos">Altura - <%=pokemon.altura%></h4>
-                        </div>
-                        <div>
-                            <h4 class="tipos">Peso - <%=pokemon.peso%> </h4>
-                        </div>
-                        <div>
-                            <h4 class="tipos">Categoria - <%=pokemon.categoria%></h3>
-                        </div>
-                        <div>
-                            <h4 class="tipos">Habilidade - <%=pokemon.habilidade%></h3>
-                        </div>
-                    </div>
-                </div>
-        </section>
+      <section id="descr">
+        <div>
+          <div><h2><%=pokemon.nome%> Nº<%=pokemon.numero%></h2></div>
+          <div>
+            <img src="<%=pokemon.imagem%>" alt="" />
+            <p><%=pokemon.descricao%></p>
+          </div>
+          <div>
+            <div>
+              <% pokemon.tipo.forEach((tipo) => { %>
+              <p class="tipos">Tipo - <%=tipo%></p>
+              <% })%>
+            </div>
+            <div>
+              <p class="tipos">Altura - <%=pokemon.altura%></p>
+            </div>
+            <div>
+              <p class="tipos">Peso - <%=pokemon.peso%></p>
+            </div>
+            <div>
+              <p class="tipos">Categoria - <%=pokemon.categoria%></p>
+            </div>
+            <div>
+              <p class="tipos">Habilidade - <%=pokemon.habilidade%></p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>&copy; Pokémon - Todos os direitos reservados - 2022</p>
-      </footer>
-      <script src="./js/script.js"></script>
-    </body>
-  </html>
+      <p>&copy; Pokémon - Todos os direitos reservados - 2022</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
