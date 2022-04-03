@@ -19,7 +19,7 @@ const pokedex = [
     imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
     descricao:
       "Há uma semente de planta nas costas desde o dia em que este Pokémon nasce. A semente cresce lentamente.",
-    altura: "Altura: 0.7 m",
+    altura: "0.7 m",
     peso: "6.9 kg",
     categoria: "Semente",
     habilidade: "Superar",
@@ -48,7 +48,7 @@ const pokedex = [
     descricao:
       "Quando retrai seu longo pescoço em sua concha, esguicha água com força vigorosa.",
     altura: "0.5 m",
-    peso: "Peso: 9.0 kg",
+    peso: "9.0 kg",
     categoria: "Tartaruga Minúscula",
     habilidade: "Torrente",
   },
